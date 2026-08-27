@@ -1,6 +1,6 @@
 const getApiBaseUrl = (): string => {
   if (typeof window !== 'undefined' && window.location.hostname !== 'localhost' && window.location.hostname !== '127.0.0.1') {
-    return 'https://apex-bank-api.loca.lt';
+    return 'https://ea085370cbda6e.lhr.life';
   }
   return 'http://localhost:8080';
 };
