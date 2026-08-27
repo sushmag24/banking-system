@@ -2,7 +2,8 @@
 
 A production-grade, enterprise-ready **Full Stack Banking Management System** built with **Spring Boot 3 Microservices**, **Spring Cloud**, **JWT Authentication**, **MySQL**, **Resilience4j**, and a responsive **Angular 19** frontend.
 
-> **Live Demo:** [https://apex-global-bank.vercel.app](https://apex-global-bank.vercel.app)
+> **Live Application URL:** [https://6085695e40b3fa.lhr.life](https://6085695e40b3fa.lhr.life)  
+> **Public API Gateway:** [https://2ab00731451f08.lhr.life](https://2ab00731451f08.lhr.life)
 
 ---
 
