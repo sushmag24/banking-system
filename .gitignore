@@ -1,0 +1,67 @@
+# ============================
+# Java / Maven Build
+# ============================
+target/
+*.class
+*.jar
+*.war
+*.ear
+*.log
+
+# ============================
+# Maven Wrapper
+# ============================
+.mvn/
+mvnw
+mvnw.cmd
+
+# ============================
+# IDE Files
+# ============================
+.idea/
+*.iml
+*.iws
+.project
+.classpath
+.settings/
+.vscode/
+*.swp
+*.swo
+*~
+.factorypath
+.springBeans
+
+# ============================
+# OS Files
+# ============================
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ============================
+# Node / Angular
+# ============================
+frontend/node_modules/
+frontend/dist/
+frontend/.angular/
+frontend/.sass-cache/
+npm-debug.log*
+yarn-error.log*
+yarn-debug.log*
+
+# ============================
+# Environment / Secrets
+# ============================
+.env
+.env.local
+.env.*.local
+*.pem
+*.key
+
+# ============================
+# Misc
+# ============================
+*.bak
+*.tmp
+*.orig
+logs/

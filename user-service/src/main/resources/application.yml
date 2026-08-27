@@ -1,0 +1,50 @@
+server:
+  port: 8082
+
+spring:
+  application:
+    name: user-service
+    bad_request: "BAD_REQUEST"
+    conflict: "CONFLICT"
+    not_found: "NOT_FOUND"
+  cache:
+    type: simple
+  config:
+    import: optional:configserver:http://localhost:8888
+  datasource:
+    url: jdbc:mysql://${MYSQL_HOST:localhost}:${MYSQL_PORT:3306}/${MYSQL_DB_NAME:user_service}?createDatabaseIfNotExist=true
+    username: ${MYSQL_USER:root}
+    password: ${MYSQL_PASSWORD:changeme}
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+
+app:
+  config:
+    keycloak:
+      server-url: ${KEYCLOAK_URL:http://localhost:8571}
+      realm: ${KEYCLOAK_REALM:banking-service}
+      client-id: ${KEYCLOAK_CLIENT_ID:banking-service-api-client}
+      client-secret: ${KEYCLOAK_CLIENT_SECRET:changeme}
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+
+management:
+  endpoint:
+    health:
+      show-details: always
+  health:
+    redis:
+      enabled: false
+  endpoints:
+    web:
+      exposure:
+        include: health,info,prometheus,metrics

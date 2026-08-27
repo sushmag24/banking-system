@@ -1,0 +1,16 @@
+server:
+  port: 8761
+
+eureka:
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+
+spring:
+  application:
+    name: service-registry
+    bad_request: "BAD_REQUEST"
+    conflict: "CONFLICT"
+    not_found: "NOT_FOUND"
+  config:
+    import: optional:configserver:http://localhost:8888
