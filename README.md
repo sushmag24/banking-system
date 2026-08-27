@@ -148,7 +148,7 @@ CREATE DATABASE IF NOT EXISTS sequence_generator;
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/sushmaggowda24/banking-system.git
+git clone https://github.com/sushmag24/banking-system.git
 cd banking-system
 ```
 
@@ -285,4 +285,4 @@ This project is for educational and portfolio demonstration purposes.
 
 ---
 
-**Built with ❤️ by [Sushma Gowda](https://github.com/sushmaggowda24)**
+**Built with ❤️ by [Sushma Gowda](https://github.com/sushmag24)**
