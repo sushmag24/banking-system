@@ -2,8 +2,8 @@
 
 A production-grade, enterprise-ready **Full Stack Banking Management System** built with **Spring Boot 3 Microservices**, **Spring Cloud**, **JWT Authentication**, **MySQL**, **Resilience4j**, and a responsive **Angular 19** frontend.
 
-> **Live Application URL:** [https://6085695e40b3fa.lhr.life](https://6085695e40b3fa.lhr.life)  
-> **Public API Gateway:** [https://2ab00731451f08.lhr.life](https://2ab00731451f08.lhr.life)
+> **Live Application URL (Frontend):** [https://apex-bank-app.loca.lt](https://apex-bank-app.loca.lt)  
+> **Public API Gateway:** [https://apex-bank-api.loca.lt](https://apex-bank-api.loca.lt)
 
 ---
 
