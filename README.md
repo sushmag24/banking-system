@@ -2,8 +2,8 @@
 
 A production-grade, enterprise-ready **Full Stack Banking Management System** built with **Spring Boot 3 Microservices**, **Spring Cloud**, **JWT Authentication**, **MySQL**, **Resilience4j**, and a responsive **Angular 19** frontend.
 
-> **Live Application URL (Frontend):** [https://0ca072e8ccd5a0.lhr.life](https://0ca072e8ccd5a0.lhr.life)  
-> **Public API Gateway:** [https://ea085370cbda6e.lhr.life](https://ea085370cbda6e.lhr.life)
+> **Permanent Live Demo (Frontend):** [https://sushmag24.github.io/banking-system/](https://sushmag24.github.io/banking-system/)  
+> **GitHub Repository:** [https://github.com/sushmag24/banking-system](https://github.com/sushmag24/banking-system)
 
 ---
 
