@@ -2,8 +2,9 @@ services:
   - type: web
     name: apex-banking-frontend
     env: static
-    buildCommand: cd frontend && npm install && npx ng build --configuration production
-    staticPublishPath: frontend/dist/frontend/browser
+    rootDir: frontend
+    buildCommand: npm install && npx ng build --configuration production
+    staticPublishPath: dist/frontend/browser
     headers:
       - path: /*
         name: Access-Control-Allow-Origin
@@ -16,8 +17,9 @@ services:
   - type: web
     name: apex-api-gateway
     env: docker
-    dockerfilePath: api-gateway/Dockerfile
-    dockerContext: api-gateway
+    rootDir: api-gateway
+    dockerfilePath: Dockerfile
+    dockerContext: .
     plan: free
     envVars:
       - key: PORT
@@ -31,8 +33,9 @@ services:
   - type: web
     name: apex-service-registry
     env: docker
-    dockerfilePath: service-registry/Dockerfile
-    dockerContext: service-registry
+    rootDir: service-registry
+    dockerfilePath: Dockerfile
+    dockerContext: .
     plan: free
     envVars:
       - key: PORT
@@ -41,8 +44,9 @@ services:
   - type: web
     name: apex-user-service
     env: docker
-    dockerfilePath: user-service/Dockerfile
-    dockerContext: user-service
+    rootDir: user-service
+    dockerfilePath: Dockerfile
+    dockerContext: .
     plan: free
     envVars:
       - key: MYSQL_HOST
@@ -59,8 +63,9 @@ services:
   - type: web
     name: apex-account-service
     env: docker
-    dockerfilePath: account-service/Dockerfile
-    dockerContext: account-service
+    rootDir: account-service
+    dockerfilePath: Dockerfile
+    dockerContext: .
     plan: free
     envVars:
       - key: MYSQL_HOST
@@ -77,8 +82,9 @@ services:
   - type: web
     name: apex-transaction-service
     env: docker
-    dockerfilePath: transaction-service/Dockerfile
-    dockerContext: transaction-service
+    rootDir: transaction-service
+    dockerfilePath: Dockerfile
+    dockerContext: .
     plan: free
     envVars:
       - key: MYSQL_HOST
@@ -95,8 +101,9 @@ services:
   - type: web
     name: apex-fund-transfer-service
     env: docker
-    dockerfilePath: fund-transfer-service/Dockerfile
-    dockerContext: fund-transfer-service
+    rootDir: fund-transfer-service
+    dockerfilePath: Dockerfile
+    dockerContext: .
     plan: free
     envVars:
       - key: MYSQL_HOST
@@ -113,8 +120,9 @@ services:
   - type: web
     name: apex-sequence-generator
     env: docker
-    dockerfilePath: sequence-generator/Dockerfile
-    dockerContext: sequence-generator
+    rootDir: sequence-generator
+    dockerfilePath: Dockerfile
+    dockerContext: .
     plan: free
     envVars:
       - key: MYSQL_HOST
