@@ -47,6 +47,8 @@ services:
     envVars:
       - key: MYSQL_HOST
         sync: false
+      - key: MYSQL_PORT
+        value: "28123"
       - key: MYSQL_USER
         sync: false
       - key: MYSQL_PASSWORD
@@ -63,6 +65,8 @@ services:
     envVars:
       - key: MYSQL_HOST
         sync: false
+      - key: MYSQL_PORT
+        value: "28123"
       - key: MYSQL_USER
         sync: false
       - key: MYSQL_PASSWORD
@@ -79,6 +83,8 @@ services:
     envVars:
       - key: MYSQL_HOST
         sync: false
+      - key: MYSQL_PORT
+        value: "28123"
       - key: MYSQL_USER
         sync: false
       - key: MYSQL_PASSWORD
@@ -95,6 +101,8 @@ services:
     envVars:
       - key: MYSQL_HOST
         sync: false
+      - key: MYSQL_PORT
+        value: "28123"
       - key: MYSQL_USER
         sync: false
       - key: MYSQL_PASSWORD
@@ -111,6 +119,8 @@ services:
     envVars:
       - key: MYSQL_HOST
         sync: false
+      - key: MYSQL_PORT
+        value: "28123"
       - key: MYSQL_USER
         sync: false
       - key: MYSQL_PASSWORD
